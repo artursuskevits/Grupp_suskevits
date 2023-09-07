@@ -11,9 +11,10 @@ namespace Grupp_suskevits
     public class Liie
 
     {
-        private readonly string _nimi;
-        private readonly int _age;
-        private readonly string _race;
+        
+       public string _nimi;
+        public int _age;
+        public  string _race;
         public Liie(string nimi, int age, string status)
         {
             this._nimi = nimi;
@@ -21,18 +22,35 @@ namespace Grupp_suskevits
             this._race = status;
         }
         public Liie() { }
-        public string Nimi { get => _nimi; }
-        public int Age { get => _age; }
-        public string Race { get => _race; }
+        
+        public string Nimi
+        {
+            get => _nimi;
+            set => _nimi = value;
+        }
+
+        public int Age
+        {
+            get => _age;
+            set => _age = value;
+        }
+
+        public string Race
+        {
+            get => _race;
+            set => _race = value;
+        }
+
 
         public void readinfo()
         {
             Console.WriteLine();
-            Console.WriteLine("text = " + Nimi);
+            Console.WriteLine("Nimi = " + Nimi);
             Console.WriteLine("Age = " + Age);
             Console.WriteLine("Race= " + Race);
         }
 
-       
+     
+
     }
 }

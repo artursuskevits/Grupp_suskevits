@@ -13,18 +13,20 @@ namespace Grupp_suskevits
         {
             
             Group group = new Group(Group.Generate_group_size());
-            //Console.WriteLine(string.Join(", ", group.Members));  // John, Mary, Jane
-            //Console.WriteLine(group.GetMembersCount());  // 3
-
+            
             while (true)
             {
                 Liie m1 = new Liie();
-               group.GenerateLiie(m1);
-                Console.WriteLine(group.AddMember(m1));
+                group.GenerateLiie(m1);
                 m1.readinfo();
-                Console.ReadLine();
+                group.AddMember(m1);
+                ConsoleKeyInfo keyInfo = Console.ReadKey();
+                Group.Read_key(keyInfo,group.Members);
+                
+
             }
-            
+
         }
+
     }
 }
