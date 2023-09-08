@@ -47,7 +47,7 @@ namespace Grupp_suskevits
             Console.WriteLine();
             Console.WriteLine("Nimi = " + Nimi);
             Console.WriteLine("Age = " + Age);
-            Console.WriteLine("Race= " + Race);
+            Console.WriteLine("Race = " + Race);
         }
 
      
