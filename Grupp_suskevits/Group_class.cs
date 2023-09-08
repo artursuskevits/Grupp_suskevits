@@ -11,8 +11,8 @@ namespace Grupp_suskevits
 {
     public class Group
     {
-        public List<string> names = new List<string> { "Emersyn Lynn", "Zechariah Evans", "Eliana Pope" };
-        public List<string> raceList = new List<string> { "American Indian", "Asian", " Latino" };
+        public List<string> names = new List<string> { "Emersyn Lynn", "Zechariah Evans", "Eliana Pope", "Gunnar Gonzales", "Hadley Douglas", "Derek Stevens", "Katherine Murphy", "Cameron Harrington", "Legacy Bass", "Landen Curtis" };
+        public List<string> raceList = new List<string> { "American Indian", "Asian", " Latino", "Pacific Islander", "White" };
         public List<Liie> Members = new List<Liie>();
         private readonly int _maxAmount;
 
@@ -68,9 +68,9 @@ namespace Grupp_suskevits
         {
             Random rnd = new Random();
 
-            int Age = rnd.Next(16, 18);
-            int elmentforfoundingrandomname = rnd.Next(0, 3);
-            int elmentforfoundingrandomrace = rnd.Next(0, 3);
+            int Age = rnd.Next(16, 41);
+            int elmentforfoundingrandomname = rnd.Next(0, 10);
+            int elmentforfoundingrandomrace = rnd.Next(0, 5);
             string Name = names[elmentforfoundingrandomname];
             string Race = raceList[elmentforfoundingrandomrace];
             m2.Nimi = Name;
